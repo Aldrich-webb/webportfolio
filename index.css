@@ -4,6 +4,15 @@ body {
     color: #333;
 }
 
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" <width>;
+}
+
 .navbar {
     background-color: #82a0aa;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .05);
