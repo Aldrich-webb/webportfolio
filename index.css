@@ -1,0 +1,241 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar {
+    background-color: #82a0aa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .05);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #4b4a54 !important;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #495057 !important;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+.landing-section {
+    background: linear-gradient(to right, #677381, #82a0aa, #677381);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.landing-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.landing-section p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary-custom {
+    background-color: #fff;
+    color: #007bff;
+    border: 2px solid #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+}
+
+section {
+    padding: 80px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+h2 {
+    font-weight: 700;
+    color: #007bff;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #007bff;
+    border-radius: 2px;
+}
+
+.about-img {
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .1);
+    margin-bottom: 50px;
+    margin-left: 15px auto;
+}
+
+#about .container {
+    background-color: #a3cfcd;
+    border-radius: 50px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, .15);
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.skill-badge {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.portfolio-item img {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item .card-body {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section p {
+        font-size: 1rem;
+    }
+    section {
+        padding: 50px 0;
+    }
+    h2 {
+        margin-bottom: 30px;
+    }
+    .about-img {
+        margin-bottom: 30px;
+    }
+}
+
+.tools-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.tools-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #192a56;
+}
+
+.tool-category {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.tool-category h3 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #192a56;
+    font-weight: 600;
+}
+
+.tool-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.icon-item { /* This one should be the definitive icon-item rule */
+    width: 70px; /* Consistent size for tool icons */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@media (min-width: 992px) {
+    .tools-container .tool-category:nth-child(2) {
+        margin-left: auto;
+    }
+    .tools-container .tool-category:nth-child(3) {
+        margin-right: auto;
+    }
+}
